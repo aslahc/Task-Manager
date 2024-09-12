@@ -14,6 +14,7 @@ const TaskFilter = ({ setFilter }) => {
         <option value="High">High</option>
         <option value="Medium">Medium</option>
         <option value="Low">Low</option>
+        <option value="Completed">Completed</option>
       </select>
     </div>
   );

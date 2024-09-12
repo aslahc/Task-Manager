@@ -65,7 +65,9 @@ const TaskItem = ({
   return (
     <div className="task">
       <div className="task-info">
-        <input type="checkbox" onChange={() => onMarkComplete(task.id)} />
+        {task.status !== "Completed" && (
+          <input type="checkbox" onChange={() => onMarkComplete(task.id)} />
+        )}
         <h3 className={task.status == "Completed" ? "completed-task" : ""}>
           {task.title}
         </h3>
@@ -80,7 +82,10 @@ const TaskItem = ({
         </span>
       </div>
       <div className="task-actions">
-        <button onClick={() => onEdit(task)}>Edit</button>
+        {task.status !== "Completed" && (
+          <button onClick={() => onEdit(task)}>Edit</button>
+        )}
+
         <button onClick={() => onDelete(task.id)}>Delete</button>
       </div>
     </div>
