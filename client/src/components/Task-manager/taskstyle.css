@@ -1,0 +1,141 @@
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ss */
+
+.task-info {
+    display: flex;
+    align-items: center;
+}
+
+.task-info h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.task-info p {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-actions button {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-actions button:hover {
+    color: #000;
+}
+
+.task-time {
+    font-size: 0.9rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+.task-time span {
+    margin-left: 5px;
+}
+
+.select-dropdown {
+    width: 3%;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: white;
+    appearance: none; /* Hides default dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select-dropdown:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: white;
+    border-radius: 10px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-select {
+    padding: 8px;
+    border-radius: px;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    background-color: transparent;  
+}
+
+.task-form-container {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Adjust spacing between inputs as needed */
+}
+.task-list{
+    font-size: smaller;
+    margin-top: 24px;
+}
+
+h2{
+    font-size: medium;
+    margin-top: 24px;
+}
+.text-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.save-btn{
+    background-color: #64707c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 4px;
+    margin-left: 1px;
+}
+.error-message{
+    color: red;
+    font-size: smaller  
+}
+.completed-task {
+    text-decoration: line-through;
+  }
